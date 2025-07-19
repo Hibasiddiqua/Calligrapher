@@ -132,6 +132,17 @@
             padding: 0.5rem 1rem;
             border: 1px solid #ddd;
             border-radius: 4px;
+            transition: all 0.3s;
+        }
+        
+        .client-name:hover {
+            border-color: var(--gold);
+            transform: translateY(-3px);
+        }
+        
+        .client-name a {
+            color: inherit;
+            text-decoration: none;
         }
         
         .about {
@@ -140,9 +151,26 @@
         }
         
         .about-content {
-            text-align: center;
-            max-width: 800px;
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         .section-title {
@@ -236,6 +264,7 @@
             color: var(--white);
             font-size: 1.5rem;
             transition: color 0.3s;
+            text-decoration: none;
         }
         
         .social-links a:hover {
@@ -245,6 +274,7 @@
         .instagram-handle {
             color: #E1306C;
             font-weight: 600;
+            text-decoration: none;
         }
         
         .calligraphy-symbol {
@@ -260,6 +290,10 @@
             
             .hero h1 {
                 font-size: 2rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
             }
         }
     </style>
@@ -295,33 +329,39 @@
         <div class="container">
             <h2 class="section-title">Trusted By Premium Brands</h2>
             <div class="client-logos">
-                <div class="client-name">Montblanc</div>
-                <div class="client-name">Sephora</div>
-                <div class="client-name">L'Occitane</div>
-                <div class="client-name">Byredo</div>
-                <div class="client-name">Bath & Body Works</div>
-                <div class="client-name">Lenskart</div>
-                <div class="client-name">American Eagle</div>
-                <div class="client-name">Homecentre</div>
-                <div class="client-name">Nesma & Partners</div>
-                <div class="client-name">Sab Al Awwal</div>
-                <div class="client-name">White Cafe</div>
-                <div class="client-name">Match</div>
-                <div class="client-name">Jhah</div>
-                <div class="client-name">Laure Beauty</div>
+                <div class="client-name"><a href="https://www.montblanc.com" target="_blank">Montblanc</a></div>
+                <div class="client-name"><a href="https://www.sephora.sa" target="_blank">Sephora Saudi Arabia</a></div>
+                <div class="client-name"><a href="https://sa.loccitane.com" target="_blank">L'Occitane en Provence</a></div>
+                <div class="client-name"><a href="https://www.byredo.com" target="_blank">Byredo</a></div>
+                <div class="client-name"><a href="https://www.bathandbodyworks.com.sa" target="_blank">Bath & Body Works</a></div>
+                <div class="client-name"><a href="https://www.lenskart.com/sa" target="_blank">Lenskart Middle East</a></div>
+                <div class="client-name"><a href="https://www.ae.com/saudi-arabia" target="_blank">American Eagle Saudi Arabia</a></div>
+                <div class="client-name"><a href="https://www.homecentre.com/sa" target="_blank">Home Centre Saudi Arabia</a></div>
+                <div class="client-name"><a href="https://www.nesma.com" target="_blank">Nesma & Partners</a></div>
+                <div class="client-name"><a href="https://www.sabaa.com.sa" target="_blank">Sab Al Awwal Group</a></div>
+                <div class="client-name"><a href="https://whitegarden.com.sa" target="_blank">White Garden Cafe</a></div>
+                <div class="client-name"><a href="https://www.matchfashion.com" target="_blank">MATCHESFASHION</a></div>
+                <div class="client-name"><a href="https://www.jhah.com" target="_blank">Jhah</a></div>
+                <div class="client-name"><a href="https://www.laurebeauty.com" target="_blank">Laure Beauty</a></div>
             </div>
         </div>
     </section>
 
     <section class="about" id="about">
         <div class="container">
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="calligraphy-symbol">🖋️</div>
-                <h2 class="section-title">About Me</h2>
-                <p>Hiba Siddiqua is a professional calligrapher and engraver specializing in luxury brand experiences across Saudi Arabia.</p>
-                <p>With refined expertise in both traditional and contemporary techniques, I create bespoke calligraphy and precision engraving for premium products, corporate gifts, and special events.</p>
-                <p>My work focuses on transforming ordinary items into personalized treasures through meticulous craftsmanship and artistic vision.</p>
-                <p>See my work on Instagram: <a href="https://instagram.com/shades.of.me93" target="_blank" class="instagram-handle">@shades.of.me93</a></p>
+                <div class="about-image">
+                    <img src="https://drive.google.com/file/d/1XCgIkuGx16q3c0nbVp0FyV1ITOGqt7ED/view?usp=drive_link" alt="Hiba Siddiqua - Professional Calligrapher">
+                    <!-- Replace the placeholder URL with your actual image URL -->
+                </div>
+                <div class="about-text">
+                    <div class="calligraphy-symbol">🖋️</div>
+                    <p>Hiba Siddiqua is a professional calligrapher and engraver specializing in luxury brand experiences across Saudi Arabia.</p>
+                    <p>With refined expertise in both traditional and contemporary techniques, I create bespoke calligraphy and precision engraving for premium products, corporate gifts, and special events.</p>
+                    <p>My work focuses on transforming ordinary items into personalized treasures through meticulous craftsmanship and artistic vision.</p>
+                    <p>See my work on Instagram: <a href="https://instagram.com/shades.of.me93" target="_blank" class="instagram-handle">@shades.of.me93</a></p>
+                </div>
             </div>
         </div>
     </section>
